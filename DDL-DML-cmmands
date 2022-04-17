@@ -36,7 +36,7 @@ created_at datetime
 );
 create table order_products(
 
-constraint pk_order primary key (order_id,product_id)
+constraint pk_order primary key (order_id,product_id),
 foreign key(order_id) references orders(id),
 foreign key(product_id) references products(id),
 quantity int default 0
