@@ -1,3 +1,4 @@
+-- DDL
 create database store;
 use store;
 -- DDL
