@@ -1,5 +1,6 @@
 create database store;
 use store;
+-- DDL
 create table countries(
 code int primary key,
 name varchar(20) not null,
