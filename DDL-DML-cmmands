@@ -35,8 +35,8 @@ created_at datetime
 
 );
 create table order_products(
-order_id int,
-product_id int,
+
+constraint pk_order primary key (order_id,product_id)
 foreign key(order_id) references orders(id),
 foreign key(product_id) references products(id),
 quantity int default 0
@@ -49,12 +49,13 @@ insert into users values (1,'ghaida alsaif','gh@gmail.com','F','1995-8-23','2022
 
 set sql_safe_updates= 0;
 insert into orders values(202,1,'start','2022-4-17 13:10:00');
+insert into products values(55,'tea',100,'valid','2022-4-17 13:45:03')
+,(44,'coffee',100,'valid' ,'2022-4-17 13:50:30');
 
-insert into products values(55,'tea',100,'valid','2022-4-17 13:45:03');
 
 insert into order_products values (202,55,90);
 
 update countries set name='egypt', continent_name ='africa' where code =1;
-delete from products where id=55;
+delete from products where id=44;
 
 
