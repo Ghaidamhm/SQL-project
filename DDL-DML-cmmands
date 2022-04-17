@@ -47,7 +47,7 @@ quantity int default 0
 
 insert into countries values(1,'riyadh','asia');
 
-insert into users values (1,'ghaida alsaif','gh@gmail.com','F','1995-8-23','2022-04-17 13:05:10',1);
+insert into users values (1,'ghaida alsaif','gh@gmail.com','F','1995-8-23','2022-4-17 13:10:00 ,1);
 
 set sql_safe_updates= 0;
 insert into orders values(202,1,'start','2022-4-17 13:10:00');
